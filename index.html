@@ -75,12 +75,13 @@
     }
 
     function getEnvironment() {
+      document.getElementById("os").append(liff.getOS())
     }
 
     async function main() {
-      alert("LINE Developers x Skooldio")
+      alert("Welcome to Flight Standards")
       await liff.init({ liffId: "1656610605-0or2aoz2" })
-      // getEnvironment()
+      getEnvironment()
       // getUserProfile()
       // getContext()
       // getFriendship()
